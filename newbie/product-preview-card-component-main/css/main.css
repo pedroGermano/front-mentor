@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --dark-cyan: #3c8067;
+  --cream: hsl(30, 38%, 92%);
+
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body{
+  background: #f2f2f2;
+  font-size: 14px;
+}
+
+.container{
+  width: 37.5rem;
+  display: flex;
+  flex-direction: row;
+  margin: 10% auto;
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img__content{
+  width: 18.75rem;
+  height: 28.125rem;
+  background-image: url('/images/image-product-desktop.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.text__content{
+  width: 18.75rem;
+  height: 28.125rem;
+  padding: 2rem;
+}
+
+h1.text__content-title{
+  font-family: 'Fraunces';
+  max-width: 80%;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 24px;
+
+}
+
+.text__content-sub{
+  margin-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: var(--dark-grayish-blue);
+  letter-spacing: 5px;
+  line-height: 14.63px;
+  font-size: 12px33333333;
+}
+
+
+
+p.text__content-txt{
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark-grayish-blue);
+  margin-bottom: 29px;
+
+  
+}
+
+.prices__content{
+  display: flex;
+  gap: 19px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.price__content-sale{
+  font-size: 32px;
+  line-height: 32px;
+  font-family: 'Fraunces';
+  color: var(--dark-cyan);
+
+}
+
+.price__content-promo{
+  font-size: 13px;
+  line-height: 23px;
+  text-decoration: line-through;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark-grayish-blue);
+
+}
+
+button.btn{
+  width: 14.75rem;
+  height: 3rem;
+  background: var(--dark-cyan);
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+
+
+}
