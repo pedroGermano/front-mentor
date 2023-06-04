@@ -15,7 +15,7 @@
 }
 
 body{
-  background: #f2f2f2;
+  background: var(--cream);
   font-size: 14px;
 }
 
@@ -69,8 +69,9 @@ p.text__content-txt{
   font-family: 'Montserrat', sans-serif;
   color: var(--dark-grayish-blue);
   margin-bottom: 29px;
-
-  
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
 }
 
 .prices__content{
@@ -111,6 +112,40 @@ button.btn{
   font-weight: bold;
   border: none;
   border-radius: 0.5rem;
+  transition: all .2s ease-in-out;
+}
 
+.btn:hover{
+  background: #1a4435;
+}
 
+@media (max-width:768px){
+  .container{
+    max-width: 343px;
+    height: 611px;
+    flex-direction: column;
+  }
+  .img__content{
+    height: 343px;
+    border-radius: 10px 10px 0px 0px;
+    background-image: url(/images/image-product-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .text__content{
+    width: 300px;
+    height: 450px;
+    padding: 32px;
+    background: #fff;
+  }
+
+  .text__content-txt{
+    width: 295px;
+  }
+
+  .text__content-sub{
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
 }
